@@ -1,0 +1,29 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.Modal-Dialog {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(133, 156, 218);
+}
+
+.Modal-Header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3px 18px;
+  font-size: large;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.modal-body {
+  padding-top: 10px;
+}
+.Modal_Submit {
+  margin-bottom: 110px;
+}
