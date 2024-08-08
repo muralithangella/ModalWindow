@@ -3,8 +3,9 @@ import { useEffect } from "react";
 const ModalDialog = ({ handleClose }) => {
   useEffect(() => {
     function onKeyDown(event) {
-      console.log("event.KeyCode", event.KeyCode);
-      if (event.KeyCode === 27) {
+      console.log("event.KeyCode", event.keyCode);
+      if (event.keyCode === 13) {
+        console.log("event.KeyCode", event.keyCode);
         handleClose();
       }
     }
