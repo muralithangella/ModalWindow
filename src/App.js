@@ -1,11 +1,15 @@
 import "./styles.css";
 import ModalDialog from "./Components/ModalDialog";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function App() {
   const [show, setShow] = useState(false);
+
   const handleSubmit = () => {
     setShow(!show);
+  };
+  const handleClose = () => {
+    setShow(false);
   };
   return (
     <div className="App">
@@ -27,7 +31,7 @@ export default function App() {
       >
         Modal Window
       </button>
-      {show ? <ModalDialog /> : ""}
+      {show ? <ModalDialog handleClose={handleClose} /> : ""}
     </div>
   );
 }
